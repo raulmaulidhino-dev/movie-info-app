@@ -35,9 +35,9 @@ Ini akan memulai server di http://localhost:3000.
 npm run dev
 Server akan berjalan dengan live reloading untuk pengembangan.
 
-##Endpoint API
+Endpoint API
 
-###Endpoint Test
+Endpoint Test
 GET /test
 Respons: Hello World! This is just for testing.
 Endpoint Tiket Film
