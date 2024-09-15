@@ -5,12 +5,6 @@ const router = express.Router();
 // API Key dari OMDb (dapatkan dari http://www.omdbapi.com/)
 const OMDB_API_KEY = '66bf3385';
 
-router.get('/test', (req, res) => {
-  res.send('Hello World! This is just for testing.');
-});
-
-// Add the Movie Ticketing API logic here
-
 router.get('/movie/:title/:customers', async (req, res) => {
   const movieTitle = req.params.title; // Judul film dari parameter URL
   const customers = parseInt(req.params.customers, 10); // Jumlah pelanggan dari parameter URL
