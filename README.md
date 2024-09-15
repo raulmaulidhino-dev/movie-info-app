@@ -81,3 +81,10 @@ npm run build
 - ***Axios***: Klien HTTP untuk mengambil data film dari OMDb API.
 - ***Webpack***: Digunakan untuk membundel aplikasi.
 - ***ESLint***: Alat linting untuk memastikan standar penulisan kode.
+
+Saya, @raulmaulidhino-dev, sebagai pemilik repositori sekaligus penginisialisasi projek ini, mengucapkan terima banyak kepada rekan-rekan tim saya:
+- @ZackRyu12 sebagai pengonfigurasi dan pembuat API projek ini
+- @IsnaJesika sebagai pengonfigurasi module eslint
+- @heeyarun04 sebagai penulis penjelasan projek aplikasi ini
+- Zayyana, sebagai penulis penjelasan projek aplikasi ini
+Semoga dengan adanya projek ini, dapat memberikan insight dan inspirasi baru kepada para visitor!
