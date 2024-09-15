@@ -38,7 +38,7 @@ Ini akan memulai server di http://localhost:3000.
    npm run dev
 Server akan berjalan dengan live reloading untuk pengembangan.
 
-Endpoint API
+## Endpoint API
 
 Endpoint Test
 - GET /test
@@ -52,7 +52,7 @@ Contoh Request:
 GET http://localhost:3000/movie/Inception/5
 
 Contoh Respons:
-      ```bash
+
       {
         "movie": {
           "title": "Inception",
