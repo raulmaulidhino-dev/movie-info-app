@@ -30,6 +30,7 @@ Anda bisa mendapatkan API key dari http://www.omdbapi.com/.
 
 4. Jalankan aplikasi:
    ```bash
+   npm run build
    npm run start
    ```
   Ini akan memulai server di ```http://localhost:3000```.
@@ -37,6 +38,7 @@ Anda bisa mendapatkan API key dari http://www.omdbapi.com/.
 5. Untuk menjalankan aplikasi dalam mode development:
    ```bash
    npm run dev
+   npm run start
    ```
   Server akan berjalan dengan live reloading untuk pengembangan.
 
