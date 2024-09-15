@@ -1,5 +1,5 @@
 import express from 'express';
-import axios from 'axios'; //Menambahkan Axios untuk mengambil data dari film
+import axios from 'axios'; // Menambahkan Axios untuk mengambil data dari film
 const router = express.Router();
 
 // API Key dari OMDb (dapatkan dari http://www.omdbapi.com/)
