@@ -18,9 +18,10 @@
   "name": "my-webpack-project",
   "scripts": {
     "dev": "webpack --mode=development",
-    "start": "webpack --mode=production --node-env=production",
+    "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve",
+    "start": "node src/index.js",
     "lint": "eslint src/"
   },
   "dependencies": {
