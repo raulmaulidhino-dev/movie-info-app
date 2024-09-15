@@ -2,10 +2,10 @@
 Ini adalah proyek kolaboratif akhir untuk memenuhi tugas terakhir kelas Node.js oleh TalentHub. Aplikasi ini dibangun menggunakan **Express.js** dan terintegrasi dengan OMDb API untuk mengambil data film serta menghitung harga tiket berdasarkan tahun rilis film.
 
 ## Fitur
-- Mengambil detail film (judul, tahun, genre, dan plot) menggunakan OMDb API.
-- Menghitung harga tiket berdasarkan tahun rilis film.
-- Mendukung banyak pelanggan dengan menghitung total harga tiket untuk semua pelanggan.
-- API dibangun menggunakan Express.js dengan rute untuk mengambil detail film.
+- Mengambil detail film (judul, tahun, genre, dan plot) menggunakan OMDb API
+- Menghitung harga tiket berdasarkan tahun rilis film
+- Mendukung banyak pelanggan dengan menghitung total harga tiket untuk semua pelanggan
+- API dibangun menggunakan Express.js dengan rute untuk mengambil detail film
 
 Pastikan Anda sudah menginstal:
 - Node.js (v14 atau lebih tinggi)
@@ -38,14 +38,9 @@ Anda bisa mendapatkan API key dari http://www.omdbapi.com/.
    ```bash
    npm run dev
    ```
-Server akan berjalan dengan live reloading untuk pengembangan.
+  Server akan berjalan dengan live reloading untuk pengembangan.
 
 ## Endpoint API
-```
-Endpoint Test
-- GET /test
-Respons: Hello World! This is just for testing.
-```
 ```
 Endpoint Tiket Film
 - GET /movie/:title/:customers
@@ -84,4 +79,3 @@ npm run build
 - ***Axios***: Klien HTTP untuk mengambil data film dari OMDb API.
 - ***Webpack***: Digunakan untuk membundel aplikasi.
 - ***ESLint***: Alat linting untuk memastikan standar penulisan kode.
-- 
