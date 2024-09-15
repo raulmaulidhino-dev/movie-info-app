@@ -20,55 +20,60 @@ Pastikan Anda sudah menginstal:
    cd movie-ticketing-app
 
 2. Instal semua dependensi:
-npm install
+   ```bash
+   npm install
 
 3. Siapkan API Key OMDb:
 Ganti OMDB_API_KEY di src/router.js dengan API key milik Anda sendiri. 
 Anda bisa mendapatkan API key dari http://www.omdbapi.com/.
 
 4. Jalankan aplikasi:
-npm run start
+   ```bash
+   npm run start
 
 Ini akan memulai server di http://localhost:3000.
 
 5. Untuk menjalankan aplikasi dalam mode development:
-npm run dev
+   ```bash
+   npm run dev
 Server akan berjalan dengan live reloading untuk pengembangan.
 
 Endpoint API
 
 Endpoint Test
-GET /test
+- GET /test
 Respons: Hello World! This is just for testing.
-Endpoint Tiket Film
-GET /movie/:title/:customers
 
+Endpoint Tiket Film
+- GET /movie/:title/:customers
 Mengambil detail film berdasarkan judul dan menghitung harga tiket untuk sejumlah pelanggan.
+
 Contoh Request:
 GET http://localhost:3000/movie/Inception/5
 
 Contoh Respons:
-{
-  "movie": {
-    "title": "Inception",
-    "year": "2010",
-    "genre": "Action, Adventure, Sci-Fi",
-    "plot": "A thief who steals corporate secrets..."
-  },
-  "ticket": {
-    "price_per_ticket": 50000,
-    "customers": 5,
-    "total_price": 250000
-  }
-}
+      ```bash
+      {
+        "movie": {
+          "title": "Inception",
+          "year": "2010",
+          "genre": "Action, Adventure, Sci-Fi",
+          "plot": "A thief who steals corporate secrets..."
+        },
+        "ticket": {
+          "price_per_ticket": 50000,
+          "customers": 5,
+          "total_price": 250000
+        }
+      }
 
-##ESLint dan Webpack
+## ESLint dan Webpack
 - Linting: Proyek ini menggunakan ESLint untuk memastikan standar coding. Anda bisa menjalankan linting dengan perintah berikut:
 npm run lint
 - Webpack: Proyek ini menggunakan Webpack untuk membundel aplikasi. Untuk membangun proyek menggunakan Webpack, jalankan:
 npm run build
 
-##Alat Pengembangan
+## Alat Pengembangan
 - Express.js: Framework web untuk membangun API.
 - Axios: Klien HTTP untuk mengambil data film dari OMDb API.
 - Webpack: Digunakan untuk membundel aplikasi.
