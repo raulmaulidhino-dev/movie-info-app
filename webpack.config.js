@@ -2,55 +2,52 @@
 
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
-const isProduction = process.env.NODE_ENV == 'production';
-
+const isProduction = process.env.NODE_ENV === 'production'; // Perbaikan di sini
 
 const config = {
-    target: 'node',
-    entry: './src/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
-    },
-    externals: [nodeExternals()],
-    devServer: {
-        open: true,
-        host: 'localhost',
-    },
-    plugins: [
-        // Add your plugins here
-        // Learn more about plugins from https://webpack.js.org/configuration/plugins/
-    ],
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/i,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                    },
-                },
-            },
-            {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                type: 'asset',
-            },
+  target: 'node',
+  entry: './src/index.js',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  externals: [nodeExternals()],
+  devServer: {
+    open: true,
+    host: 'localhost'
+  },
+  plugins: [
+    // Add your plugins here
+    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        type: 'asset'
+      }
 
-            // Add your rules for custom modules here
-            // Learn more about loaders from https://webpack.js.org/loaders/
-        ],
-    },
+      // Add your rules for custom modules here
+      // Learn more about loaders from https://webpack.js.org/loaders/
+    ]
+  }
 };
 
 module.exports = () => {
-    if (isProduction) {
-        config.mode = 'production';
-        
-        
-    } else {
-        config.mode = 'development';
-    }
-    return config;
+  if (isProduction) {
+    config.mode = 'production';
+  } else {
+    config.mode = 'development';
+  }
+  return config;
 };
