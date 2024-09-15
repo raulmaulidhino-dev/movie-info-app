@@ -21,7 +21,7 @@ Pastikan Anda sudah menginstal:
 
 2. Instal semua dependensi:
    ```bash
-   npm install
+   npm install express axios
 
 3. Siapkan API Key OMDb:
 Ganti OMDB_API_KEY di src/router.js dengan API key milik Anda sendiri. 
