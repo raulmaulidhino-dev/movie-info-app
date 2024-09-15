@@ -87,4 +87,5 @@ Saya, @raulmaulidhino-dev, sebagai pemilik repositori sekaligus penginisialisasi
 - @IsnaJesika sebagai pengonfigurasi module eslint
 - @heeyarun04 sebagai penulis penjelasan projek aplikasi ini
 - Zayyana, sebagai penulis penjelasan projek aplikasi ini
+
 Semoga dengan adanya projek ini, dapat memberikan insight dan inspirasi baru kepada para visitor!
