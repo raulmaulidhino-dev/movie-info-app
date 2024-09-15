@@ -22,32 +22,36 @@ Pastikan Anda sudah menginstal:
 2. Instal semua dependensi:
    ```bash
    npm install
+   npm install express axios
 
-4. Siapkan API Key OMDb:
+3. Siapkan API Key OMDb:
 Ganti OMDB_API_KEY di src/router.js dengan API key milik Anda sendiri. 
 Anda bisa mendapatkan API key dari http://www.omdbapi.com/.
 
-5. Jalankan aplikasi:
+4. Jalankan aplikasi:
    ```bash
    npm run start
    ```
-   Ini akan memulai server di ```http://localhost:3000```.
+  Ini akan memulai server di ```http://localhost:3000```.
 
 5. Untuk menjalankan aplikasi dalam mode development:
    ```bash
    npm run dev
+   ```
 Server akan berjalan dengan live reloading untuk pengembangan.
 
 ## Endpoint API
 ```
 Endpoint Test
-GET /test
+- GET /test
 Respons: Hello World! This is just for testing.
-Endpoint Tiket Film
-GET /movie/:title/:customers
 ```
-
+```
+Endpoint Tiket Film
+- GET /movie/:title/:customers
+```
 Mengambil detail film berdasarkan judul dan menghitung harga tiket untuk sejumlah pelanggan.
+
 Contoh Request:
 ```GET http://localhost:3000/movie/Inception/5```
 
@@ -70,6 +74,7 @@ Contoh Respons:
 
 ## ESLint dan Webpack
 - ***Linting***: Proyek ini menggunakan ESLint untuk memastikan standar coding. Anda bisa menjalankan linting dengan perintah berikut:
+
 npm run lint
 - ***Webpack***: Proyek ini menggunakan Webpack untuk membundel aplikasi. Untuk membangun proyek menggunakan Webpack, jalankan:
 npm run build
@@ -79,3 +84,4 @@ npm run build
 - ***Axios***: Klien HTTP untuk mengambil data film dari OMDb API.
 - ***Webpack***: Digunakan untuk membundel aplikasi.
 - ***ESLint***: Alat linting untuk memastikan standar penulisan kode.
+- 

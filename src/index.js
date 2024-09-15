@@ -16,6 +16,6 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 
 const server = http.createServer(app);
 
-server.listen(PORT, 'localhost', function(){
+server.listen(PORT, 'localhost', function () {
   console.log('Listening on localhost:3000');
 });
