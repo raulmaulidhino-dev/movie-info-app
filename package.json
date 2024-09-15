@@ -21,7 +21,7 @@
     "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch",
     "serve": "webpack serve",
-    "start": "node src/index.js",
+    "start": "node dist/bundle.js",
     "lint": "eslint src/"
   },
   "dependencies": {
